@@ -1,86 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="2" ignored="0" total="2" passed="0">
+<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="4155" started-at="2017-03-22T19:33:11Z" finished-at="2017-03-22T19:33:15Z">
+  <suite name="Default suite" duration-ms="31358" started-at="2017-03-23T20:38:48Z" finished-at="2017-03-23T20:39:20Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="4155" started-at="2017-03-22T19:33:11Z" finished-at="2017-03-22T19:33:15Z">
+    <test name="Default test" duration-ms="31358" started-at="2017-03-23T20:38:48Z" finished-at="2017-03-23T20:39:20Z">
       <class name="testClasses.LoginTest">
-        <test-method status="FAIL" signature="aloginScreenvalidation()[pri:0, instance:testClasses.LoginTest@5ae9a829]" name="aloginScreenvalidation" duration-ms="4094" started-at="2017-03-23T01:03:11Z" finished-at="2017-03-23T01:03:15Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at pageObjects.LogInObjects.nextButton_click(LogInObjects.java:37)
-	at testClasses.LoginTest.aloginScreenvalidation(LoginTest.java:21)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="aloginScreenvalidation()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="aloginScreenvalidation" duration-ms="12510" started-at="2017-03-24T02:08:48Z" finished-at="2017-03-24T02:09:01Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- aloginScreenvalidation -->
-        <test-method status="FAIL" signature="clickOnNext()[pri:0, instance:testClasses.LoginTest@5ae9a829]" name="clickOnNext" duration-ms="19" started-at="2017-03-23T01:03:15Z" finished-at="2017-03-23T01:03:15Z">
-          <exception class="java.lang.NullPointerException">
-            <full-stacktrace>
-              <![CDATA[java.lang.NullPointerException
-	at pageObjects.LogInObjects.mobilenumberfield_sendkeys(LogInObjects.java:27)
-	at testClasses.LoginTest.clickOnNext(LoginTest.java:28)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:104)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:851)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1177)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:756)
-	at org.testng.TestRunner.run(TestRunner.java:610)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:387)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:382)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:340)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:289)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1293)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1218)
-	at org.testng.TestNG.runSuites(TestNG.java:1133)
-	at org.testng.TestNG.run(TestNG.java:1104)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.NullPointerException -->
+        <test-method status="PASS" signature="EnterMobileNo()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="EnterMobileNo" duration-ms="6996" started-at="2017-03-24T02:09:01Z" depends-on-methods="testClasses.LoginTest.aloginScreenvalidation" finished-at="2017-03-24T02:09:08Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnNext -->
+        </test-method> <!-- EnterMobileNo -->
+        <test-method status="PASS" signature="enterPassword()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="enterPassword" duration-ms="8615" started-at="2017-03-24T02:09:08Z" depends-on-methods="testClasses.LoginTest.EnterMobileNo" finished-at="2017-03-24T02:09:16Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterPassword -->
+        <test-method status="PASS" signature="acceptHippa()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="acceptHippa" duration-ms="3134" started-at="2017-03-24T02:09:16Z" depends-on-methods="testClasses.LoginTest.enterPassword" finished-at="2017-03-24T02:09:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- acceptHippa -->
       </class> <!-- testClasses.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->

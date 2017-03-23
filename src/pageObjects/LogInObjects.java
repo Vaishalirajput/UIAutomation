@@ -1,21 +1,36 @@
 package pageObjects;
 
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 
 public class LogInObjects {
+	public final WebDriver driver;
+	public LogInObjects(WebDriver d){
+		driver = d;
+	}
 	
-	@FindBy(id="com.fisike.debug:id/btn_skip")
+	@FindBy(id="com.fisike:id/btn_skip")
 	public WebElement skipafterlaunch;
 	
 	@FindBy(className="android.widget.EditText")
-	public WebElement usernameField;
+	public WebElement mobileNumber;
 	
-	@FindBy(id="com.fisike.debug:id/btn_ok")
-	public WebElement nextButton;
+	@FindBy(id="com.fisike:id/btn_ok")
+	public WebElement Nextbutton;
 	
-	@FindBy(className="android.widget.TextView")
-	public WebElement NoUNvalidationMsg;
+	@FindBy(className="android.widget.EditText")
+	public WebElement passwordField;
+	
+	@FindBy(id="com.fisike:id/btn_next")
+	public WebElement signInButton;
+	
+	@FindBy(id="com.fisike:id/continue_action")
+	public WebElement continueOnHippa;
+	
 	
 	public void skipafterlaunch_click()
 	{
@@ -24,17 +39,27 @@ public class LogInObjects {
 	
 	public void mobilenumberfield_sendkeys(String x)
 	{
-		usernameField.sendKeys(x);
+		mobileNumber.sendKeys(x);
 	}
 	
-	public String noUsernameVal()
+	public void clickNextButton()
 	{
-		return NoUNvalidationMsg.getText();
+		Nextbutton.click();
 	}
 	
-	public void nextButton_click()
+	public void passwordField(String x)
 	{
-		nextButton.click();
+		passwordField.sendKeys(x);
+	}
+	
+	public void signInButtonClick()
+	{
+		signInButton.click();
+	}
+	
+	public void continueButtonClick()
+	{
+		continueOnHippa.click();
 	}
 	
 }

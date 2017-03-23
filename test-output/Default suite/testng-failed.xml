@@ -5,8 +5,8 @@
     <classes>
       <class name="testClasses.LoginTest">
         <methods>
-          <include name="aloginScreenvalidation"/>
-          <include name="clickOnNext"/>
+          <include name="enterPassword"/>
+          <include name="EnterMobileNo"/>
         </methods>
       </class> <!-- testClasses.LoginTest -->
     </classes>

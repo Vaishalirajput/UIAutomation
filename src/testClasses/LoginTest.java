@@ -1,8 +1,15 @@
 package testClasses;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.Test;
 import java.net.MalformedURLException;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.concurrent.TimeUnit;
 
-import org.junit.Assert;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 
 import BaseConf.BaseConfig;
@@ -12,22 +19,46 @@ import pageObjects.LogInObjects;
 public class LoginTest {
 	static AndroidDriver driver;
 	BaseConfig launchapp = new BaseConfig();
-	LogInObjects page = new LogInObjects();
+	static LogInObjects page;
 	
 	@Test
 	public void aloginScreenvalidation() throws MalformedURLException
 	{
+		
 		driver = launchapp.launchApp();
-	    page.nextButton_click();
-	    Assert.assertEquals(page.noUsernameVal(), "Enter user name");
+		
+		String activity = driver.currentActivity();
+		System.out.println("activity = "+activity);
+		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
+		page = PageFactory.initElements(driver, LogInObjects.class);
+		page.skipafterlaunch_click();
 	}
 	
-	@Test 
-	public void clickOnNext()
+	@Test(dependsOnMethods={"aloginScreenvalidation"})
+	public void EnterMobileNo()
 	{
-		page.mobilenumberfield_sendkeys("test@fisike.com");
-		page.nextButton_click();
+		
+		page.mobilenumberfield_sendkeys("1230000000");
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		page.clickNextButton();
 	}
+	
+	@Test(dependsOnMethods={"EnterMobileNo"})
+	public void enterPassword()
+	{
+		
+		page.passwordField("test@123");
+		//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		page.signInButtonClick();
+	}	
+	
+	@Test(dependsOnMethods={"enterPassword"})
+	public void acceptHippa()
+	{
+		
+		page.continueButtonClick();
+	}
+	
 	
 
 }
