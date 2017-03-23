@@ -19,7 +19,7 @@ public class BaseConfig {
 	static SystemLocations sysLoc = new SystemLocations();
 	static Properties prop= new Properties();
 	
-	public void launchApp() throws MalformedURLException
+	public AndroidDriver launchApp() throws MalformedURLException
 	//public static void main(String[] args) throws MalformedURLException
 	{
 		prop = sysLoc.getConfigLocation();
@@ -31,5 +31,7 @@ public class BaseConfig {
 		cabs.setCapability("fullReset", false);
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4720/wd/hub"),cabs);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		return driver;
 	}
 }
