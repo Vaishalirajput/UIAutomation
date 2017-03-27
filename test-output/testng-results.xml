@@ -1,29 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="4" passed="4">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="31358" started-at="2017-03-23T20:38:48Z" finished-at="2017-03-23T20:39:20Z">
+  <suite name="Default suite" duration-ms="60745" started-at="2017-03-27T18:03:56Z" finished-at="2017-03-27T18:04:57Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="31358" started-at="2017-03-23T20:38:48Z" finished-at="2017-03-23T20:39:20Z">
-      <class name="testClasses.LoginTest">
-        <test-method status="PASS" signature="aloginScreenvalidation()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="aloginScreenvalidation" duration-ms="12510" started-at="2017-03-24T02:08:48Z" finished-at="2017-03-24T02:09:01Z">
+    <test name="Default test" duration-ms="60745" started-at="2017-03-27T18:03:56Z" finished-at="2017-03-27T18:04:57Z">
+      <class name="testClasses.MedicationTest">
+        <test-method status="PASS" signature="clickOnMedicationTab()[pri:0, instance:testClasses.MedicationTest@3532ec19]" name="clickOnMedicationTab" duration-ms="60718" started-at="2017-03-27T23:33:56Z" finished-at="2017-03-27T23:34:57Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- aloginScreenvalidation -->
-        <test-method status="PASS" signature="EnterMobileNo()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="EnterMobileNo" duration-ms="6996" started-at="2017-03-24T02:09:01Z" depends-on-methods="testClasses.LoginTest.aloginScreenvalidation" finished-at="2017-03-24T02:09:08Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- EnterMobileNo -->
-        <test-method status="PASS" signature="enterPassword()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="enterPassword" duration-ms="8615" started-at="2017-03-24T02:09:08Z" depends-on-methods="testClasses.LoginTest.EnterMobileNo" finished-at="2017-03-24T02:09:16Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- enterPassword -->
-        <test-method status="PASS" signature="acceptHippa()[pri:0, instance:testClasses.LoginTest@215be6bb]" name="acceptHippa" duration-ms="3134" started-at="2017-03-24T02:09:16Z" depends-on-methods="testClasses.LoginTest.enterPassword" finished-at="2017-03-24T02:09:20Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- acceptHippa -->
-      </class> <!-- testClasses.LoginTest -->
+        </test-method> <!-- clickOnMedicationTab -->
+      </class> <!-- testClasses.MedicationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

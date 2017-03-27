@@ -14,7 +14,7 @@ import io.appium.java_client.android.AndroidDriver;
 
 public class BaseConfig {
 	
-	static AndroidDriver driver;
+	protected static AndroidDriver driver;
 	static DesiredCapabilities cabs = new DesiredCapabilities();
 	static SystemLocations sysLoc = new SystemLocations();
 	static Properties prop= new Properties();
