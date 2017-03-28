@@ -30,7 +30,13 @@ public class MedicationTest extends BaseConfig{
 		driver.findElement(By.id("com.fisike:id/etMedicineSearch")).click();
 		driver.findElement(By.id("com.fisike:id/et_search")).sendKeys("croc");
 	    driver.findElement(By.xpath("//android.widget.TextView[@text='CROCIN-DPS-15ML']")).click();
-	//new Select(driver.findElement(By.xpath(""))).selectByVisibleText("");
+	    driver.findElement(By.id("com.fisike:id/imgEdit")).click();
+	    driver.swipe(314, 811, 314, 498, 2000);
+	    driver.swipe(532, 811, 532, 498, 2000);
+	    driver.findElement(By.id("com.fisike:id/rbBefore")).click();
+	    driver.swipe(933, 1409, 933, 924, 3000);
+	    driver.findElement(By.id("com.fisike:id/bt_number_picker")).click();
+	    //new Select(driver.findElement(By.xpath(""))).selectByVisibleText("");
 	
 	}
 	

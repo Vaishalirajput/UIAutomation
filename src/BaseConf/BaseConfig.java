@@ -29,7 +29,7 @@ public class BaseConfig {
 		cabs.setCapability("appActivity",prop.getProperty("activity"));
 		cabs.setCapability("appPackage",prop.getProperty("package"));
 		cabs.setCapability("fullReset", false);
-		driver = new AndroidDriver(new URL("http://127.0.0.1:4720/wd/hub"),cabs);
+		driver = new AndroidDriver(new URL("http://127.0.0.1:4719/wd/hub"),cabs);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		
 		return driver;

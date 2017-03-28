@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="60745" started-at="2017-03-27T18:03:56Z" finished-at="2017-03-27T18:04:57Z">
+  <suite name="Default suite" duration-ms="73506" started-at="2017-03-28T17:22:09Z" finished-at="2017-03-28T17:23:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="60745" started-at="2017-03-27T18:03:56Z" finished-at="2017-03-27T18:04:57Z">
+    <test name="Default test" duration-ms="73506" started-at="2017-03-28T17:22:09Z" finished-at="2017-03-28T17:23:23Z">
       <class name="testClasses.MedicationTest">
-        <test-method status="PASS" signature="clickOnMedicationTab()[pri:0, instance:testClasses.MedicationTest@3532ec19]" name="clickOnMedicationTab" duration-ms="60718" started-at="2017-03-27T23:33:56Z" finished-at="2017-03-27T23:34:57Z">
+        <test-method status="PASS" signature="clickOnMedicationTab()[pri:0, instance:testClasses.MedicationTest@3532ec19]" name="clickOnMedicationTab" duration-ms="73452" started-at="2017-03-28T22:52:09Z" finished-at="2017-03-28T22:53:23Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnMedicationTab -->
