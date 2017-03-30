@@ -17,9 +17,9 @@ import io.appium.java_client.android.AndroidDriver;
 import pageObjects.LogInObjects;
 
 public class LoginTest {
-	static AndroidDriver driver;
+	AndroidDriver driver;
 	BaseConfig launchapp = new BaseConfig();
-	static LogInObjects page;
+	LogInObjects page;
 	
 	@Test
 	public void aloginScreenvalidation() throws MalformedURLException

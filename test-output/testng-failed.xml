@@ -5,7 +5,13 @@
     <classes>
       <class name="testClasses.MedicationTest">
         <methods>
-          <include name="clickOnMedicationTab"/>
+          <include name="clickActionOnSearchMedication"/>
+          <include name="navigateOnAddMedicationAndFrequency"/>
+          <include name="verifyElementOnEnterMedicineNameScreen"/>
+          <include name="crossClickActionOnSearchMedicine"/>
+          <include name="backArrowClickOnSearchMedicine"/>
+          <include name="enterMedicineNameAndSelectAnyMedicine"/>
+          <include name="enterLessCharInEnterMedicine"/>
         </methods>
       </class> <!-- testClasses.MedicationTest -->
     </classes>

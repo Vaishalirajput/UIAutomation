@@ -22,7 +22,6 @@ public class SystemLocations {
 			ex.printStackTrace();
 		} 
 		return prop;
-
 	}
 
 

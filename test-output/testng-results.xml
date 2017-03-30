@@ -1,16 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="7" passed="7">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="73506" started-at="2017-03-28T17:22:09Z" finished-at="2017-03-28T17:23:23Z">
+  <suite name="Default suite" duration-ms="46339" started-at="2017-03-30T18:28:00Z" finished-at="2017-03-30T18:28:46Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="73506" started-at="2017-03-28T17:22:09Z" finished-at="2017-03-28T17:23:23Z">
+    <test name="Default test" duration-ms="46339" started-at="2017-03-30T18:28:00Z" finished-at="2017-03-30T18:28:46Z">
       <class name="testClasses.MedicationTest">
-        <test-method status="PASS" signature="clickOnMedicationTab()[pri:0, instance:testClasses.MedicationTest@3532ec19]" name="clickOnMedicationTab" duration-ms="73452" started-at="2017-03-28T22:52:09Z" finished-at="2017-03-28T22:53:23Z">
+        <test-method status="PASS" signature="navigateOnAddMedicationAndFrequency()[pri:0, instance:testClasses.MedicationTest@49912c99]" name="navigateOnAddMedicationAndFrequency" duration-ms="22741" started-at="2017-03-30T23:58:00Z" finished-at="2017-03-30T23:58:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- clickOnMedicationTab -->
+        </test-method> <!-- navigateOnAddMedicationAndFrequency -->
+        <test-method status="PASS" signature="clickActionOnSearchMedication()[pri:0, instance:testClasses.MedicationTest@49912c99]" name="clickActionOnSearchMedication" duration-ms="2286" started-at="2017-03-30T23:58:23Z" depends-on-methods="testClasses.MedicationTest.navigateOnAddMedicationAndFrequency" finished-at="2017-03-30T23:58:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickActionOnSearchMedication -->
+        <test-method status="PASS" signature="verifyElementOnEnterMedicineNameScreen()[pri:0, instance:testClasses.MedicationTest@49912c99]" name="verifyElementOnEnterMedicineNameScreen" duration-ms="627" started-at="2017-03-30T23:58:25Z" depends-on-methods="testClasses.MedicationTest.clickActionOnSearchMedication" finished-at="2017-03-30T23:58:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElementOnEnterMedicineNameScreen -->
+        <test-method status="PASS" signature="enterLessCharInEnterMedicine()[pri:0, instance:testClasses.MedicationTest@49912c99]" name="enterLessCharInEnterMedicine" duration-ms="5409" started-at="2017-03-30T23:58:25Z" depends-on-methods="testClasses.MedicationTest.verifyElementOnEnterMedicineNameScreen" finished-at="2017-03-30T23:58:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterLessCharInEnterMedicine -->
+        <test-method status="PASS" signature="crossClickActionOnSearchMedicine()[pri:0, instance:testClasses.MedicationTest@49912c99]" name="crossClickActionOnSearchMedicine" duration-ms="877" started-at="2017-03-30T23:58:31Z" depends-on-methods="testClasses.MedicationTest.enterLessCharInEnterMedicine" finished-at="2017-03-30T23:58:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- crossClickActionOnSearchMedicine -->
+        <test-method status="PASS" signature="backArrowClickOnSearchMedicine()[pri:0, instance:testClasses.MedicationTest@49912c99]" name="backArrowClickOnSearchMedicine" duration-ms="3197" started-at="2017-03-30T23:58:32Z" depends-on-methods="testClasses.MedicationTest.crossClickActionOnSearchMedicine" finished-at="2017-03-30T23:58:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- backArrowClickOnSearchMedicine -->
+        <test-method status="PASS" signature="enterMedicineNameAndSelectAnyMedicine()[pri:0, instance:testClasses.MedicationTest@49912c99]" name="enterMedicineNameAndSelectAnyMedicine" duration-ms="11112" started-at="2017-03-30T23:58:35Z" depends-on-methods="testClasses.MedicationTest.backArrowClickOnSearchMedicine" finished-at="2017-03-30T23:58:46Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterMedicineNameAndSelectAnyMedicine -->
       </class> <!-- testClasses.MedicationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
