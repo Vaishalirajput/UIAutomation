@@ -6,7 +6,7 @@
       <class name="testClasses.UpdateTest">
         <methods>
           <include name="navigateOnMyPro"/>
-          <include name="updateAadhar"/>
+          <include name="verifyElementsOnUpdateScreen"/>
         </methods>
       </class> <!-- testClasses.UpdateTest -->
     </classes>

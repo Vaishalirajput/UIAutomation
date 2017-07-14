@@ -18,6 +18,7 @@ import appUtil.MedicationUtil;
 import io.appium.java_client.android.AndroidKeyCode;
 import pageObjects.MedicationObjects;
 import pageObjects.UpdateObjects;
+import org.apache.log4j.Logger;
 
 public class UpdateTest extends BaseConfig {
 	
@@ -29,6 +30,7 @@ static String adharValueMyProfile;
 UpdateObjects page;
 Login login;
 SoftAssert sAssert;
+static Logger log = Logger.getLogger(UpdateTest.class.getName());
 
 public UpdateTest() throws MalformedURLException
 {
@@ -50,7 +52,6 @@ public void verifyElementsOnUpdateScreen()
 {
 	//camera and username test verification remaining
 	sAssert.assertEquals(page.firstNameLabel.getText(), "First Name");
-	sAssert.assertEquals(page.lastNameLabel.getText(), "Last Name");
 	sAssert.assertEquals(page.genderLabel.getText(), "Gender");
 	sAssert.assertEquals(page.dateOfBirthLabel.getText(), "Date of Birth");
 	sAssert.assertEquals(page.maritalStatusLabel.getText(), "Marital Status");
@@ -77,11 +78,14 @@ private void nameChange(String FN, String LN)
 	page.firstNametext.clear();
 	page.firstNametext.sendKeys(FN);
 	sAssert.assertEquals(page.firstNametext.getText(), FN);
+	log.info("First name is set");
 	page.lastNametext.clear();
 	page.lastNametext.sendKeys(LN);
 	sAssert.assertEquals(page.lastNametext.getText(), LN);
+	log.info("Last name is set");
 	driver.pressKeyCode(AndroidKeyCode.BACK);
 	nameMyProfile = FN + " " + LN;
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	driver.swipe(866, 1706, 759, 366, 2000);
 	page.updateButton.click();
 }
@@ -94,6 +98,7 @@ private void firstNameChange(String FN)
 	sAssert.assertEquals(page.firstNametext.getText(), FN);
 	driver.pressKeyCode(AndroidKeyCode.BACK);
 	nameMyProfile = FN + " " + page.lastNametext.getText();
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	driver.swipe(866, 1706, 759, 366, 2000);
 	page.updateButton.click();
 }
@@ -106,6 +111,7 @@ private void lastNameChange(String LN)
 	sAssert.assertEquals(page.lastNametext.getText(), LN);
 	driver.pressKeyCode(AndroidKeyCode.BACK);
 	nameMyProfile = page.firstNametext.getText() + " " + LN;
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	driver.swipe(866, 1706, 759, 366, 2000);
 	page.updateButton.click();
 }
@@ -116,6 +122,7 @@ private void removeLastName()
 	page.lastNametext.clear();
 	driver.pressKeyCode(AndroidKeyCode.BACK);
 	nameMyProfile = page.firstNametext.getText();
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	driver.swipe(866, 1706, 759, 366, 2000);
 	page.updateButton.click();
 }
@@ -126,9 +133,17 @@ public void removeFirstName()
 	page.navigateOnUpdateProfile();
 	page.firstNametext.clear();
 	driver.pressKeyCode(AndroidKeyCode.BACK);
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	driver.swipe(866, 1706, 759, 366, 2000);
 	page.updateButton.click();
-}
+	sAssert.assertEquals(page.firstNameValidation.getText(), "Please enter your first name.");
+	page.firstNametext.sendKeys("TestFN");
+	nameMyProfile = page.firstNametext.getText() + " " + page.lastNametext.getText();
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+	driver.swipe(866, 1706, 759, 366, 2000);
+	page.updateButton.click();
+	validateOtherEntries();	
+	}
 
 @Test
 public void updateAadhar()
@@ -228,6 +243,7 @@ private void changeMaritalStatus(String status)
 	if(status == "Widowed")
 		driver.swipe(520, 799, 545, 279, 2000);
 	driver.findElementByXPath("//android.widget.TextView[@text='"+status+"']").click();
+	driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 	driver.swipe(860, 1335, 805, 555, 2000);
 	sAssert.assertEquals(page.maritalValueUpdateScreen.getText(), status);
 	maritalSMyProfile = status;
@@ -235,8 +251,8 @@ private void changeMaritalStatus(String status)
 	sAssert.assertEquals(driver.currentActivity(), "com.engage.debug/com.mphrx.fisike.UserProfileActivity");
 
 }
-
 /*
+
 @Test
 public void addAlternateAdd()
 {

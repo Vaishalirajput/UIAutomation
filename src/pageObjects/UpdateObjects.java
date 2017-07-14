@@ -20,6 +20,7 @@ public class UpdateObjects {
 	
 	public void navigateOnMyPro()
 	{
+		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
 		sideDrawer.click();
 		sideDrawerArrow.click();
 	}
@@ -45,7 +46,7 @@ public class UpdateObjects {
 	@FindBy(id="change_password")
 	private WebElement changePassword;
 	
-	@FindBy(id="com.engage.debug:id/edFirstName")
+	@FindBy(id="com.engage.debug:id/txtNameHeader")
 	public WebElement firstNameLabel;
 	
 	@FindBy(id="com.engage.debug:id/edLastName")
@@ -57,7 +58,7 @@ public class UpdateObjects {
 	@FindBy(xpath="//android.widget.LinearLayout[contains(@resource-id,'com.engage.debug:id/edLastName')]/android.widget.EditText[@index='0']")
 	public WebElement lastNametext;
 	
-	@FindBy(id="gender_label")
+	@FindBy(id="com.engage.debug:id/txtGenderHeader")
 	public WebElement genderLabel;
 	
 	@FindBy(id="com.engage.debug:id/spinnerGenderHeader")
@@ -83,19 +84,19 @@ public class UpdateObjects {
 	public WebElement maritalValue;
 
 	
-	@FindBy(id="date_of_birth")
+	@FindBy(id="com.engage.debug:id/txtDOBHeader")
 	public WebElement dateOfBirthLabel;
 	
 	@FindBy(id="date_of_birth_button")
 	public WebElement dateOfBirthButton;
 	
-	@FindBy(id="marital_status_label")
+	@FindBy(id="com.engage.debug:id/txtStatusHeader")
 	public WebElement maritalStatusLabel;
 	
 	@FindBy(id="marital_status_drop_down")
 	WebElement maritalStatusDropDown;
 	
-	@FindBy(id="aadhar_card_label")
+	@FindBy(id="com.engage.debug:id/txtAadharHeader")
 	public WebElement aadharCardLabel;
 	
 	@FindBy(xpath="//android.widget.LinearLayout[contains(@resource-id,'com.engage.debug:id/edAadhar')]/android.widget.EditText[@index='0']")
@@ -113,6 +114,9 @@ public class UpdateObjects {
 	
 	@FindBy(id="com.engage.debug:id/txtUserName")
 	public WebElement firstNameValue;
+	
+	@FindBy(xpath="//android.widget.LinearLayout[contains(@resource-id,'com.engage.debug:id/edFirstName')]/android.widget.LinearLayout[@index='1']/android.widget.TextView[@index='0']")
+	public WebElement firstNameValidation;
 	
 	@FindBy(id="com.engage.debug:id/txtUserGender")
 	public WebElement genderValue;

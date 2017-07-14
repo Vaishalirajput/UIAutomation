@@ -1,20 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="6" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="61681" started-at="2017-07-14T07:51:42Z" finished-at="2017-07-14T07:52:44Z">
+  <suite name="Default suite" duration-ms="419503" started-at="2017-07-14T11:15:35Z" finished-at="2017-07-14T11:22:34Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="61681" started-at="2017-07-14T07:51:42Z" finished-at="2017-07-14T07:52:44Z">
+    <test name="Default test" duration-ms="419503" started-at="2017-07-14T11:15:35Z" finished-at="2017-07-14T11:22:34Z">
       <class name="testClasses.UpdateTest">
-        <test-method status="PASS" signature="navigateOnMyPro()[pri:0, instance:testClasses.UpdateTest@5d7148e2]" name="navigateOnMyPro" is-config="true" duration-ms="19275" started-at="2017-07-14T13:21:42Z" finished-at="2017-07-14T13:22:01Z">
+        <test-method status="PASS" signature="navigateOnMyPro()[pri:0, instance:testClasses.UpdateTest@52af26ee]" name="navigateOnMyPro" is-config="true" duration-ms="17231" started-at="2017-07-14T16:45:35Z" finished-at="2017-07-14T16:45:52Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- navigateOnMyPro -->
-        <test-method status="PASS" signature="genderUpdate()[pri:0, instance:testClasses.UpdateTest@5d7148e2]" name="genderUpdate" duration-ms="42372" started-at="2017-07-14T13:22:01Z" finished-at="2017-07-14T13:22:44Z">
+        <test-method status="PASS" signature="genderUpdate()[pri:0, instance:testClasses.UpdateTest@52af26ee]" name="genderUpdate" duration-ms="43636" started-at="2017-07-14T16:45:52Z" finished-at="2017-07-14T16:46:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- genderUpdate -->
+        <test-method status="PASS" signature="maritalStatusUpdate()[pri:0, instance:testClasses.UpdateTest@52af26ee]" name="maritalStatusUpdate" duration-ms="167665" started-at="2017-07-14T16:46:36Z" finished-at="2017-07-14T16:49:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- maritalStatusUpdate -->
+        <test-method status="PASS" signature="nameUpdate()[pri:0, instance:testClasses.UpdateTest@52af26ee]" name="nameUpdate" duration-ms="105675" started-at="2017-07-14T16:49:23Z" finished-at="2017-07-14T16:51:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- nameUpdate -->
+        <test-method status="PASS" signature="removeFirstName()[pri:0, instance:testClasses.UpdateTest@52af26ee]" name="removeFirstName" duration-ms="28739" started-at="2017-07-14T16:51:09Z" finished-at="2017-07-14T16:51:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeFirstName -->
+        <test-method status="PASS" signature="updateAadhar()[pri:0, instance:testClasses.UpdateTest@52af26ee]" name="updateAadhar" duration-ms="56168" started-at="2017-07-14T16:51:38Z" finished-at="2017-07-14T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- updateAadhar -->
+        <test-method status="PASS" signature="verifyElementsOnUpdateScreen()[pri:0, instance:testClasses.UpdateTest@52af26ee]" name="verifyElementsOnUpdateScreen" duration-ms="316" started-at="2017-07-14T16:52:34Z" finished-at="2017-07-14T16:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyElementsOnUpdateScreen -->
       </class> <!-- testClasses.UpdateTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
