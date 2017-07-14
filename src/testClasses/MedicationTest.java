@@ -1,9 +1,12 @@
 package testClasses;
 
 import java.net.MalformedURLException;
+import java.util.HashMap;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.Select;
 import org.testng.asserts.SoftAssert;
@@ -37,6 +40,7 @@ public class MedicationTest extends BaseConfig{
 	@Test
 	public void navigateOnAddMedicationAndFrequency() throws  InterruptedException
 	{
+		
 		util.landOnEnterMedicationDeatilsScreen();
 		sAssert.assertEquals(page.enterMedicationDetailsHeaderText(), "Add Medication Details");
 		

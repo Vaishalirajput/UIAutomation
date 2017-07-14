@@ -3,17 +3,12 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testClasses.MedicationTest">
+      <class name="testClasses.UpdateTest">
         <methods>
-          <include name="clickActionOnSearchMedication"/>
-          <include name="navigateOnAddMedicationAndFrequency"/>
-          <include name="verifyElementOnEnterMedicineNameScreen"/>
-          <include name="crossClickActionOnSearchMedicine"/>
-          <include name="backArrowClickOnSearchMedicine"/>
-          <include name="enterMedicineNameAndSelectAnyMedicine"/>
-          <include name="enterLessCharInEnterMedicine"/>
+          <include name="navigateOnMyPro"/>
+          <include name="updateAadhar"/>
         </methods>
-      </class> <!-- testClasses.MedicationTest -->
+      </class> <!-- testClasses.UpdateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

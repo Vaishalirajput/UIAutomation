@@ -26,11 +26,18 @@ public class BaseConfig {
 		//System.out.print(prop.getProperty("deviceName"));
 		cabs.setCapability("platformName", prop.getProperty("platform"));
 		cabs.setCapability("deviceName",prop.getProperty("deviceName"));
-		cabs.setCapability("appActivity",prop.getProperty("activity"));
-		cabs.setCapability("appPackage",prop.getProperty("package"));
+		//cabs.setCapability("appActivity",prop.getProperty("activity"));
+		//cabs.setCapability("appPackage",prop.getProperty("package"));
+		cabs.setCapability("app",prop.getProperty("app"));
 		cabs.setCapability("fullReset", false);
 		driver = new AndroidDriver(new URL("http://127.0.0.1:4719/wd/hub"),cabs);
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		
+		if(!driver.isAppInstalled(prop.getProperty("package")))
+		{
+			driver.installApp(prop.getProperty("app"));
+			System.out.println("App is installed");
+		}
 		
 		return driver;
 	}

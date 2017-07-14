@@ -25,9 +25,9 @@ public class Login extends BaseConfig{
 		driver.manage().timeouts().implicitlyWait(120, TimeUnit.SECONDS);
 		page = PageFactory.initElements(driver, LogInObjects.class);
 		page.skipafterlaunch_click();
-		page.mobilenumberfield_sendkeys("1230000000");
+		page.mobilenumberfield_sendkeys("8586004918");
 		page.clickNextButton();
-		page.passwordField("test@123");
+		page.passwordField("test");
 		page.signInButtonClick();
 		page.continueButtonClick();
 	}

@@ -13,22 +13,22 @@ public class LogInObjects {
 		driver = d;
 	}
 	
-	@FindBy(id="com.fisike:id/btn_skip")
+	@FindBy(id="com.engage.debug:id/btn_skip")
 	public WebElement skipafterlaunch;
 	
 	@FindBy(className="android.widget.EditText")
 	public WebElement mobileNumber;
 	
-	@FindBy(id="com.fisike:id/btn_ok")
+	@FindBy(id="com.engage.debug:id/btn_ok")
 	public WebElement Nextbutton;
 	
 	@FindBy(className="android.widget.EditText")
 	public WebElement passwordField;
 	
-	@FindBy(id="com.fisike:id/btn_next")
+	@FindBy(id="com.engage.debug:id/btn_next")
 	public WebElement signInButton;
 	
-	@FindBy(id="com.fisike:id/continue_action")
+	@FindBy(id="com.engage.debug:id/continue_action")
 	public WebElement continueOnHippa;
 	
 	
